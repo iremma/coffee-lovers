@@ -15,8 +15,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Matcha Lovers Meet Up!',
-  description: 'Join us for a day of matcha tastings, yoga classes, bakery treats, and live music at Bermondsey Street.',
+  title: 'Coffee Lovers Meet Up!',
+  description: 'Join us for a day of coffee tastings, yoga classes, bakery treats, and live music at Bermondsey Street.',
 };
 
 export default function RootLayout({

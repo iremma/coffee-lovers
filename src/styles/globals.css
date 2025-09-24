@@ -45,7 +45,7 @@ h6 {
 }
 
 .btn-primary {
-  @apply bg-accent-pink text-white hover:bg-opacity-90 hover:scale-105;
+  @apply bg-accent-orange text-white hover:bg-opacity-90 hover:scale-105;
 }
 /* Countdown component styles */
 .countdown-item {
@@ -65,7 +65,7 @@ h6 {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: var(--primary-green);
+  background-color: var(--primary-brown);
   transition: width 0.3s ease;
 }
 
@@ -75,13 +75,13 @@ h6 {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(46, 139, 87, 0.7);
+    box-shadow: 0 0 0 0 rgba(139, 69, 19, 0.7);
   }
   70% {
-    box-shadow: 0 0 0 10px rgba(46, 139, 87, 0);
+    box-shadow: 0 0 0 10px rgba(139, 69, 19, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(46, 139, 87, 0);
+    box-shadow: 0 0 0 0 rgba(139, 69, 19, 0);
   }
 }
 
@@ -130,7 +130,7 @@ h6 {
 /* Form field focus animations */
 input:focus, textarea:focus {
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.3);
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.3);
 }
 
 /* Hover effects for interactive elements */

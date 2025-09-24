@@ -12,7 +12,7 @@ interface ActivityCardProps {
 const ActivityCard: React.FC<ActivityCardProps> = ({ activity, index }) => {
   // Icons mapping (using emoji as placeholders, would use actual SVG icons in production)
   const iconMap: Record<string, string> = {
-    'tea-cup': '🍵',
+    'coffee-cup': '☕',
     'yoga': '🧘',
     'bakery': '🍰',
     'music': '🎵',
@@ -35,14 +35,14 @@ const ActivityCard: React.FC<ActivityCardProps> = ({ activity, index }) => {
       }}
       whileTap={{ scale: 0.98 }}
     >
-      <div className="h-32 bg-primary-green flex items-center justify-center">
+      <div className="h-32 bg-primary-brown flex items-center justify-center">
         <span className="text-6xl" role="img" aria-label={activity.title}>
           {iconMap[activity.icon]}
         </span>
       </div>
       
       <div className="p-6">
-        <h3 className="text-xl font-heading font-bold text-dark-green mb-3">
+        <h3 className="text-xl font-heading font-bold text-dark-brown mb-3">
           {activity.title}
         </h3>
         
@@ -51,7 +51,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({ activity, index }) => {
         </p>
         
         <motion.div 
-          className="mt-4 h-1 bg-light-green rounded"
+          className="mt-4 h-1 bg-light-brown rounded"
           initial={{ width: 0 }}
           whileInView={{ width: "100%" }}
           viewport={{ once: true }}

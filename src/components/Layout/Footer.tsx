@@ -41,15 +41,15 @@ const Footer: React.FC = () => {
   const faqItems: FAQItem[] = [
     {
       question: 'What is included in the ticket price?',
-      answer: 'Your £10 ticket includes entry to the event, access to all matcha tastings, participation in yoga classes, and enjoyment of live music performances throughout the day.'
+      answer: 'Your £10 ticket includes entry to the event, access to all coffee tastings, participation in yoga classes, and enjoyment of live music performances throughout the day.'
     },
     {
-      question: 'Is the event suitable for matcha beginners?',
-      answer: 'Absolutely! The event welcomes matcha enthusiasts of all levels, from beginners to connoisseurs. Our experts will guide you through the experience.'
+      question: 'Is the event suitable for coffee beginners?',
+      answer: 'Absolutely! The event welcomes coffee enthusiasts of all levels, from beginners to connoisseurs. Our experts will guide you through the experience.'
     },
     {
       question: 'Are there food options available?',
-      answer: 'Yes, the matcha bakery section will offer a variety of matcha-infused treats for purchase. There will also be other food vendors on site.'
+      answer: 'Yes, the coffee bakery section will offer a variety of coffee-infused treats for purchase. There will also be other food vendors on site.'
     },
     {
       question: 'What should I bring to the yoga sessions?',
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
   ];
   
   return (
-    <footer className="bg-dark-green text-white">
+    <footer className="bg-dark-brown text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Location Section */}
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
                     name="name" 
                     value={contactFormData.name}
                     onChange={handleContactFormChange}
-                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-light-green"
+                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-light-brown"
                     required
                   />
                 </div>
@@ -140,7 +140,7 @@ const Footer: React.FC = () => {
                     name="email" 
                     value={contactFormData.email}
                     onChange={handleContactFormChange}
-                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-light-green"
+                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-light-brown"
                     required
                   />
                 </div>
@@ -153,14 +153,14 @@ const Footer: React.FC = () => {
                     rows={4}
                     value={contactFormData.message}
                     onChange={handleContactFormChange}
-                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-light-green"
+                    className="w-full px-3 py-2 bg-white/10 border border-white/20 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-light-brown"
                     required
                   ></textarea>
                 </div>
                 
                 <button 
                   type="submit"
-                  className="bg-light-green text-dark-green font-medium py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors"
+                  className="bg-light-brown text-dark-brown font-medium py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors"
                 >
                   Send Message
                 </button>
@@ -169,13 +169,13 @@ const Footer: React.FC = () => {
               <motion.div 
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-light-green/20 p-4 rounded-md"
+                className="bg-light-brown/20 p-4 rounded-md"
               >
                 <p className="font-medium mb-2">Thank you for your message!</p>
                 <p>We'll get back to you as soon as possible.</p>
                 <button 
                   onClick={() => setFormSubmitted(false)}
-                  className="mt-4 text-light-green hover:underline"
+                  className="mt-4 text-light-brown hover:underline"
                 >
                   Send another message
                 </button>
@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
         
         <div className="mt-12 pt-6 border-t border-white/20 text-center">
           <p className="text-sm text-white/70">
-            &copy; {new Date().getFullYear()} Matcha Lovers Meet Up! All rights reserved.
+            &copy; {new Date().getFullYear()} Coffee Lovers Meet Up! All rights reserved.
           </p>
         </div>
       </div>

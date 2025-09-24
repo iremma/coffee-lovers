@@ -42,12 +42,12 @@ export default function Home() {
       </Section>
       
       {/* Activities Section */}
-      <Section id="activities" className="bg-light-green bg-opacity-30 py-16">
+      <Section id="activities" className="bg-light-brown bg-opacity-30 py-16">
         <Container>
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-primary-green">What to Expect</h2>
-            <p className="text-center text-dark-green max-w-2xl mx-auto mb-12">
-              Join us for a day filled with matcha experiences, wellness activities, and community connections.
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-primary-brown">What to Expect</h2>
+            <p className="text-center text-dark-brown max-w-2xl mx-auto mb-12">
+              Join us for a day filled with coffee experiences, wellness activities, and community connections.
             </p>
           </ScrollReveal>
           
@@ -63,9 +63,9 @@ export default function Home() {
       <Section id="tickets" className="bg-cream py-16">
         <Container className="text-center">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-primary-green">Get Your Tickets</h2>
-            <p className="text-dark-green max-w-2xl mx-auto mb-8">
-              Secure your spot at the Matcha Lovers Meet Up! for just £10 per person. Each ticket includes access to all activities, tastings, and performances.
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-primary-brown">Get Your Tickets</h2>
+            <p className="text-dark-brown max-w-2xl mx-auto mb-8">
+              Secure your spot at the Coffee Lovers Meet Up! for just £10 per person. Each ticket includes access to all activities, tastings, and performances.
             </p>
           </ScrollReveal>
           

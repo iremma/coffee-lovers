@@ -83,13 +83,13 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   if (isEventPassed) {
     return (
       <motion.div 
-        className="bg-primary-green/10 p-8 rounded-lg text-center"
+        className="bg-primary-brown/10 p-8 rounded-lg text-center"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
         <motion.h2 
-          className="text-3xl md:text-4xl font-heading font-bold text-primary-green mb-4"
+          className="text-3xl md:text-4xl font-heading font-bold text-primary-brown mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -97,7 +97,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           The Event Has Ended
         </motion.h2>
         <motion.p 
-          className="text-lg text-dark-green"
+          className="text-lg text-dark-brown"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -116,7 +116,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       animate="visible"
     >
       <motion.h2 
-        className="text-2xl md:text-3xl font-heading font-bold text-center mb-8 text-primary-green"
+        className="text-2xl md:text-3xl font-heading font-bold text-center mb-8 text-primary-brown"
         variants={itemVariants}
       >
         Event Countdown
@@ -131,7 +131,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           className="countdown-item"
           variants={itemVariants}
         >
-          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-green rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-brown rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
             <motion.div
               key={`days-${timeLeft.days}`}
               className="absolute text-4xl md:text-5xl font-heading font-bold text-white"
@@ -145,7 +145,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </motion.div>
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-black/10"></div>
           </div>
-          <p className="text-center mt-2 text-dark-green font-medium">Days</p>
+          <p className="text-center mt-2 text-dark-brown font-medium">Days</p>
         </motion.div>
         
         {/* Hours */}
@@ -153,7 +153,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           className="countdown-item"
           variants={itemVariants}
         >
-          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-green rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-brown rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
             <motion.div
               key={`hours-${timeLeft.hours}`}
               className="absolute text-4xl md:text-5xl font-heading font-bold text-white"
@@ -167,7 +167,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </motion.div>
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-black/10"></div>
           </div>
-          <p className="text-center mt-2 text-dark-green font-medium">Hours</p>
+          <p className="text-center mt-2 text-dark-brown font-medium">Hours</p>
         </motion.div>
         
         {/* Minutes */}
@@ -175,7 +175,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           className="countdown-item"
           variants={itemVariants}
         >
-          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-green rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-brown rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
             <motion.div
               key={`minutes-${timeLeft.minutes}`}
               className="absolute text-4xl md:text-5xl font-heading font-bold text-white"
@@ -189,7 +189,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </motion.div>
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-black/10"></div>
           </div>
-          <p className="text-center mt-2 text-dark-green font-medium">Minutes</p>
+          <p className="text-center mt-2 text-dark-brown font-medium">Minutes</p>
         </motion.div>
         
         {/* Seconds */}
@@ -197,7 +197,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           className="countdown-item"
           variants={itemVariants}
         >
-          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-green rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+          <div className="relative w-20 h-24 md:w-28 md:h-32 bg-primary-brown rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
             <motion.div
               key={`seconds-${timeLeft.seconds}`}
               className="absolute text-4xl md:text-5xl font-heading font-bold text-white"
@@ -211,7 +211,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             </motion.div>
             <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-black/10"></div>
           </div>
-          <p className="text-center mt-2 text-dark-green font-medium">Seconds</p>
+          <p className="text-center mt-2 text-dark-brown font-medium">Seconds</p>
         </motion.div>
       </motion.div>
     </motion.div>

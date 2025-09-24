@@ -37,8 +37,8 @@ const Navigation: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-primary-green font-heading font-bold text-xl">
-              Matcha Lovers
+            <a href="#" className="text-primary-brown font-heading font-bold text-xl">
+              Coffee Lovers
             </a>
           </div>
 
@@ -53,7 +53,7 @@ const Navigation: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-primary-green focus:outline-none"
+            className="md:hidden text-primary-brown focus:outline-none"
             onClick={toggleMobileMenu}
             aria-label="Toggle menu"
           >

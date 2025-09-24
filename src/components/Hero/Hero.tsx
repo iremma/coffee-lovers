@@ -44,19 +44,19 @@ const Hero: React.FC = () => {
         }}
       >
         {/* Background image with overlay */}
-        <div className="absolute inset-0 bg-[url('/matcha-bg.jpg')] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-gradient-to-b from-primary-green/80 to-dark-green/90" />
+        <div className="absolute inset-0 bg-[url('/coffee-bg.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-brown/80 to-dark-brown/90" />
         
         {/* Enhanced decorative elements with animations */}
         <motion.div 
-          className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-light-green/20 blur-xl"
+          className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-light-brown/20 blur-xl"
           animate={floatingAnimation}
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.8 }}
           transition={{ duration: 1.5 }}
         />
         <motion.div 
-          className="absolute bottom-1/3 right-1/3 w-40 h-40 rounded-full bg-accent-pink/10 blur-xl"
+          className="absolute bottom-1/3 right-1/3 w-40 h-40 rounded-full bg-accent-orange/10 blur-xl"
           animate={{
             ...floatingAnimation,
             y: [0, -20, 0]
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 1.8, delay: 0.3 }}
         />
         <motion.div 
-          className="absolute top-1/3 right-1/4 w-24 h-24 rounded-full bg-light-green/15 blur-lg"
+          className="absolute top-1/3 right-1/4 w-24 h-24 rounded-full bg-light-brown/15 blur-lg"
           animate={{
             ...floatingAnimation,
             y: [0, -10, 0]
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                Matcha
+                Coffee
               </motion.span>{" "}
               <motion.span 
                 className="inline-block"
